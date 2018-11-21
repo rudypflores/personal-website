@@ -192,7 +192,7 @@ li {
     }
 
 /*buttons for education section*/
-#education-1 {
+#education-1, #education-2, #education-3 {
   padding:15px;
   color:rgb(50,48,49);
   background-color:rgb(255,200,87);
@@ -201,27 +201,13 @@ li {
   transition:1s;
 }
   /*fade in animation*/
-  #education-1:hover {
+  #education-1:hover, #education-2:hover, #education-3:hover {
     opacity:1;
   }
 
-  #education-1 #education-1-text {
+  #education-1 #education-1-text, #education-2-text, #education-3-text {
     background-color:rgb(50,48,49);
     color:rgb(255, 255, 255);
     display:none;
     padding:15px;
   }
-
-#education-2 {
-  padding:15px;
-  color:rgb(50,48,49);
-  background-color:rgba(255,200,87,1);
-  font-weight:bolder;
-}
-
-#education-3 {
-  padding:15px;
-  color:rgb(50,48,49);
-  background-color:rgba(255,200,87,1);
-  font-weight:bolder;
-}

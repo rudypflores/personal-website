@@ -1,5 +1,3 @@
-
-
 //function checks if the user clicked the section yet
 const isClicked = (display) => {
 	if(display === 'block') {
@@ -9,6 +7,7 @@ const isClicked = (display) => {
 	}
 };
 
+//Function can be reused to open any tab and close them!
 const openSection = (name) => {
 
 	//Set our current section
