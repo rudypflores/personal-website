@@ -1,0 +1,174 @@
+/*Universal properties*/
+html {
+  font-size:12px;
+}
+
+body {
+	font-family: Helvetica, "Open Sans", serif;
+	margin: 0 auto;
+	height:100%;
+	background-color:rgb(50,48,49);
+	color:rgb(255, 255, 255);
+}
+
+h1 {
+	margin:0;
+  	font-size: 3.5rem;
+}
+
+h2 {
+	margin:0;
+	font-size: 3.0rem;
+	color:rgb(255,200,87);
+}
+
+h3 {
+	margin:0;
+	font-size: 2.5rem;
+	color:rgba(255,255,255, 0.5);
+}
+
+p {
+	font-size: 2rem;
+}
+
+a {
+	text-decoration:none;
+  color:rgb(255,200,87);
+}
+
+b {
+  color:rgb(255,200,87);
+}
+
+.bar {
+	width:100%;
+	position:fixed;
+	height:auto;
+	box-shadow: 0px 5px rgba(255,200,87,.3);
+	top:0;
+	z-index:999;
+	background-color:rgb(50,48,49);
+}
+
+  .bar img{
+    width:64px;
+    height:64px;
+    display: inline;
+    padding:5px;
+    float:left;
+  }
+
+  .bar ul {
+  	list-style-type: none;
+  	float:right;
+  	line-height: 1.5;
+    margin-top:25px;
+  }
+
+  .bar li {
+  	display: inline;
+  	padding-left:50px;
+  	font-size:1.5rem;
+  	font-weight:bolder;
+  }
+
+/*Hero properties for our hero in the website*/
+.hero {
+	height: auto;
+	width:960px;
+	margin: 0 auto;
+}
+
+  .hero p {
+  	margin-top:300px;
+  	font-size:2rem;
+  	color:rgb(255,200,87);
+  }
+
+  .hero .name {
+  	font-size:4rem;
+  	font-weight:bolder;
+  	color:rgb(255,255,255);
+  }
+
+  .hero .sub {
+  	font-size:4rem;
+  	color:rgba(255,255,255, 0.5);
+  	font-weight:bolder;
+  }
+
+  .hero .about {
+	font-size:2rem;
+	color:rgba(255,255,255, 0.5);
+  }
+
+.about-me {
+	height: 500px;
+	width:960px;
+	margin: 400px auto
+}
+
+  .about-me img {
+  	width:469px;
+  	height:469px;
+  	position:relative;
+  	z-index:0;
+  }
+
+    .about-me .par {
+  	display:inline;
+  	width: 40%;
+  	padding-right:10%;
+  	height:auto;
+  	float:left;
+	}
+
+	.about-me .img-par {
+      margin-top:75px;
+	  	width:469px;
+	  	height:469px;
+	  	display:inline;
+	  	float:left;
+	}
+
+	  .about-me .img-par .filter {
+	  	background-color: rgba(255,200,87,.3);
+	  	width:469px;
+	  	height:469px;
+	  	position:absolute;
+	  	z-index:1;
+	  }
+
+.personal-projects {
+	height: 1500px;
+	width:960px;
+	margin: 400px auto;
+}
+
+  .personal-projects img {
+  	height:475.5px;
+  	width:951px;
+  	margin: 25px auto;
+  	box-shadow: 0px 0px 25px rgb(255,200,87);
+  }
+
+/*parent flexbox*/
+.education {
+	height: 500px;
+  width:960px;
+  margin: 400px auto;
+}
+
+  /*child flexboxes*/
+  .education .par {
+    width:480px;
+  }
+
+  .education .img-par {
+    width:480px;
+  }
+
+    .education .img-par img {
+      
+    }
