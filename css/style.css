@@ -41,6 +41,10 @@ b {
   color:rgb(255,200,87);
 }
 
+li {
+  font-size: 2rem;
+}
+
 .bar {
 	width:100%;
 	position:fixed;
@@ -153,22 +157,71 @@ b {
   	box-shadow: 0px 0px 25px rgb(255,200,87);
   }
 
-/*parent flexbox*/
 .education {
 	height: 500px;
   width:960px;
   margin: 400px auto;
 }
 
-  /*child flexboxes*/
   .education .par {
-    width:480px;
+    width:960px;
   }
 
+    .education .par h1 {
+      text-align:center;
+    }
+
+  /*NEIU image taken with a yellow filter*/
   .education .img-par {
-    width:480px;
+    width:960px;
+    overflow:hidden;
+    margin: 25px auto;
   }
 
     .education .img-par img {
-      
+      height:475.5px;
+      width:960px;
     }
+
+    .education .img-par .filter {
+      height:475.5px;
+      width:960px;
+      position:absolute;
+      z-index:1;
+      background-color: rgba(255,200,87,.3);
+    }
+
+/*buttons for education section*/
+#education-1 {
+  padding:15px;
+  color:rgb(50,48,49);
+  background-color:rgb(255,200,87);
+  font-weight:bolder;
+  opacity:0.5;
+  transition:1s;
+}
+  /*fade in animation*/
+  #education-1:hover {
+    opacity:1;
+  }
+
+  #education-1 #education-1-text {
+    background-color:rgb(50,48,49);
+    color:rgb(255, 255, 255);
+    display:none;
+    padding:15px;
+  }
+
+#education-2 {
+  padding:15px;
+  color:rgb(50,48,49);
+  background-color:rgba(255,200,87,1);
+  font-weight:bolder;
+}
+
+#education-3 {
+  padding:15px;
+  color:rgb(50,48,49);
+  background-color:rgba(255,200,87,1);
+  font-weight:bolder;
+}
