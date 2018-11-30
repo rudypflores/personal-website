@@ -21,3 +21,5 @@ const openSection = (name) => {
 		section.style.display = 'none';
 	}
 };
+
+//Keyframe Animations

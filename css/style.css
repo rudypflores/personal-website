@@ -46,35 +46,28 @@ li {
 }
 
 .bar {
-	width:100%;
-	position:fixed;
-	height:auto;
+  display:flex;
+  position:fixed;
+	height:75px;
 	box-shadow: 0px 5px rgba(255,200,87,.3);
-	top:0;
 	z-index:999;
-	background-color:rgb(50,48,49);
+  background-color:rgb(50,48,49);
+  flex-flow:row wrap;
+  justify-content:center;
+  align-items: center;
+  align-content:space-around;
+  top:0;
 }
 
-  .bar img{
-    width:64px;
-    height:64px;
-    display: inline;
-    padding:5px;
-    float:left;
-  }
-
   .bar ul {
-  	list-style-type: none;
-  	float:right;
-  	line-height: 1.5;
-    margin-top:25px;
+    list-style-type: none;
+    display:flex;
   }
 
   .bar li {
   	display: inline;
-  	padding-left:50px;
-  	font-size:1.5rem;
-  	font-weight:bolder;
+  	font-size:2rem;
+    font-weight:bolder;
   }
 
 /*Hero properties for our hero in the website*/
