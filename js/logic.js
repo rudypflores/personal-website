@@ -20,10 +20,11 @@ const openSection = (name) => {
 	} else {
 		section.style.display = 'none';
 	}
+
 };
 
-//Keyframe Animations
-//Run this function on startup
-const strokeAnimation = (stroke) => {
-  
+//Check for current tab
+const currentTab = (clicked) => {
+	const tab = document.getElementById(clicked);
+
 };

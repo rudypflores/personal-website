@@ -8,10 +8,10 @@
 	<body>
 		<div class="bar">
 			<ul>
-				<li><a href="#about-me">About Me</a></li>
-				<li>Personal Projects</li>
-				<li>Education</li>
-				<li>Resume<li>
+				<li onclick="currentLink()"><a href="#about-me" class="clicked">About Me</a></li>
+				<li><a href="#personal-projects">Personal Projects</a></li>
+				<li><a href="#education">Education</a></li>
+				<li><a href="#resume">Resume</a><li>
 			</ul>
 		</div>
 		<div class="hero">
@@ -21,9 +21,10 @@
 			<span class="about">I'm a software engineer based in Chicago, IL specializing in Computer Networks and Cybersecurity. Currently working at 
 			<a href="https://northwesternsettlement.org/" target="_blank">Northwestern Settlement</a> as a web developer,
 			 <a href="mailto:rudypichola@gmail.com?subject=Questions&body=Hello I have checked your website and I had questions regarding:">ask me about it!</a></span></p>
-			<div id="anim-stroke"><div onload="strokeAnimation('anim-stroke')"></div></div>
 		</div>
-		<div class="about-me blackBack">
+
+		<div id="about-me""></div>
+		<div class="about-me">
 			<div class="par">
 				<h1>ABOUT ME</h1>
 				<p>I'm a passionate self-taught programmer born in <b>Manhattan, New York</b>, and raised in <b>Guatemala City, Guatemala</b>.
@@ -38,6 +39,7 @@
 				<img src="images/img_profile.jpg" alt="Profile picture of the developer for this site!"/>
 			</div>
 		</div>
+		<div id="personal-projects"></div>
 		<div class="personal-projects">
 			<h1>PERSONAL PROJECTS</h1><br/><br/><br/>
 				<!-- Project 1 -->
@@ -54,11 +56,12 @@
 				<!-- Link to my github for more projects -->
 				<h3>For more personal projects in my portfolio please <a href="https://github.com/rudypflores">click here</a></h3>
 		</div>
+		<div id="education"></div>
 		<div class="education">
 			<h1>EDUCATION</h1>
 			<div class="img-par">
 				<div class="filter"></div>
-				<img src="images/college-picture.png" alt="Picture of a college"/>
+				<img src="images/college-picture.png" alt="Picture of a college campus."/>
 			</div>
 			<div class="par">
 				<p onclick="openSection('education-1-text')" id="education-1">&#9656;Front-End Web Development<br/><br/>

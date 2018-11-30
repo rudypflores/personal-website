@@ -101,13 +101,6 @@ li {
 	color:rgba(255,255,255, 0.5);
   }
 
-  .hero .anim-stroke {
-    width:0px;
-    height:15px;
-    background-color:rgb(196, 145, 36);
-    margin:0 auto;
-  }
-
 .about-me {
 	height: 650px;
 	width:960px;
