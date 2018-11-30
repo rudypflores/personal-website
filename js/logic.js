@@ -23,3 +23,7 @@ const openSection = (name) => {
 };
 
 //Keyframe Animations
+//Run this function on startup
+const strokeAnimation = (stroke) => {
+  
+};

@@ -51,15 +51,16 @@ li {
   z-index:999;
   top:0;
   width: 100%;
+  background-color:rgba(82, 71, 77, 0.95);
+  height:75px;
+  border-bottom:5px solid rgba(255,200,87,0.8);
 }
 
   /* parent class of bar flexbox */
   .bar ul {
     list-style-type:none;
-    height:75px;
-    display:flex;
-    flex-flow:row wrap;
-    justify-content:center;
+    text-align:center;
+    margin-top:20px;
   }
 
   /* child class of the bar flexbox */
@@ -100,10 +101,17 @@ li {
 	color:rgba(255,255,255, 0.5);
   }
 
+  .hero .anim-stroke {
+    width:0px;
+    height:15px;
+    background-color:rgb(196, 145, 36);
+    margin:0 auto;
+  }
+
 .about-me {
-	height: 500px;
+	height: 650px;
 	width:960px;
-	margin: 400px auto
+  margin: 400px auto;
 }
 
   .about-me img {
