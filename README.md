@@ -1,7 +1,7 @@
 # Personal-Website
 Personal website that I created during my freetime in order to show my portfolio and provide users a nice and responsive experience.
 
-# On going work in progress
+## On going work in progress
 
 Upcoming features for this website in the following weeks will include:
 
