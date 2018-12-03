@@ -22,9 +22,3 @@ const openSection = (name) => {
 	}
 
 };
-
-//Check for current tab
-const currentTab = (clicked) => {
-	const tab = document.getElementById(clicked);
-
-};
