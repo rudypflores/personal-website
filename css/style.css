@@ -156,7 +156,7 @@ li {
 .personal-projects {
 	height: 1500px;
 	width:960px;
-	margin: 400px auto;
+	margin: 520px auto;
 }
 
   .personal-projects img {
@@ -174,7 +174,7 @@ li {
 .education {
 	height: 500px;
   width:960px;
-  margin: 400px auto;
+  margin: 640px auto;
 }
 
   .education .par {
@@ -239,6 +239,12 @@ li {
     display:none;
     padding:15px;
   }
+
+.resume {
+  height: 500px;
+  width:960px;
+  margin: 750px auto;
+}
 
 /*Modification classes*/
 .rotate {
