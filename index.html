@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
  		<title>Rudy Flores Software Engineer</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
 	<body>
 		<div class="bar">
 			<ul>
-				<li><a href="#about-me">About Me</a></li>
+				<li><a href="#about-me"></span>About Me</a></li>
 				<li><a href="#personal-projects">Personal Projects</a></li>
 				<li><a href="#education">Education</a></li>
 				<li><a href="#resume">Resume</a><li>
@@ -22,15 +23,14 @@
 			<a href="https://northwesternsettlement.org/" target="_blank">Northwestern Settlement</a> as a web developer,
 			 <a href="mailto:rudypichola@gmail.com?subject=Questions&body=Hello I have checked your website and I had questions regarding:">ask me about it!</a></span></p>
 		</div>
-
-		<div id="about-me""></div>
+		<div id="about-me"></div>
 		<div class="about-me">
 			<div class="par">
 				<h1>ABOUT ME</h1>
 				<p>I'm a passionate self-taught programmer born in <b>Manhattan, New York</b>, and raised in <b>Guatemala City, Guatemala</b>.
 					 I found my passion for coding by learning from my uncle that graduated as an IT and showed me the abstraction of coding.
 					  As well as giving me a basic understanding of how a problem can be solved in not one but many different ways. I taught 
-					  myself to code through <a href="https://www.codecademy.com/learn">Codecademy</a> through their <b>Java</b> courses and 
+					  myself to code through <a href="https://www.codecademy.com/learn"><b>Codecademy</b></a> through their <b>Java</b> courses and 
 					  <b>Web Development Path's</b> that they provide for members with the pro version. Most importantly, enabiling their users
 					   to work on personal projects where they can help you grow as a programmer.</p>
 			</div>
@@ -39,6 +39,7 @@
 				<img src="images/img_profile.jpg" alt="Profile picture of the developer for this site!"/>
 			</div>
 		</div>
+
 		<div id="personal-projects"></div>
 		<div class="personal-projects">
 			<h1>PERSONAL PROJECTS</h1><br/><br/><br/>
@@ -54,7 +55,7 @@
 					<p style="padding-bottom:70px;"><b>JavaScript game</b> where you need to open three doors subsequently without finding 
 						the robot. Made through DOM and event driven programming.</p>
 				<!-- Link to my github for more projects -->
-				<h3>For more personal projects in my portfolio please <a href="https://github.com/rudypflores">click here</a></h3>
+				<p>For more personal projects in my portfolio please <a href="https://github.com/rudypflores">click here</a></p>
 		</div>
 		<div id="education"></div>
 		<div class="education">
@@ -64,7 +65,7 @@
 				<img src="images/college-picture.png" alt="Picture of a college campus."/>
 			</div>
 			<div class="par">
-				<p onclick="openSection('education-1-text')" id="education-1">&#9656;Front-End Web Development<br/><br/>
+				<p onclick="openSection('education-1-text', 'img-arrow-1')" id="education-1"><img src="images/arrow.png" id="img-arrow-1"/>Front-End Web Development<br/><br/>
 				<span id="education-1-text">
 					<b>HTML</b><br/><br/>HTML5, Dynamic Websites, Responsive Websites.<br/><br/>
 					<b>CSS</b><br/><br/>Media Queries, Classes/ID's, Selectors, Flexbox.<br/><br/>
@@ -72,13 +73,13 @@
 					<b>WordPress</b><br/><br/>Plugins, Themes, Page blocks, XML/CSV export/import of data.
 				</span>
 				</p>
-				<p onclick="openSection('education-2-text')" id="education-2">&#9656;Programming Languages<br/><br/>
+				<p onclick="openSection('education-2-text', 'img-arrow-2')" id="education-2"><img src="images/arrow.png" id="img-arrow-2"/>Programming Languages<br/><br/>
 				<span id="education-2-text">
 					<b>Java</b><br/><br/>Object Oriented Programming, Input/Ouput, Syntax, Event Driven Programming, Java API.<br/><br/>
 					<b>GML</b><br/><br/>Object Oriented Programming, Syntax, Events, Scripting, Physics Engine, JSON.
 				</span>
 				</p>
-				<p onclick="openSection('education-3-text')" id="education-3">&#9656;Adittional<br/><br/>
+				<p onclick="openSection('education-3-text', 'img-arrow-3')" id="education-3"><img src="images/arrow.png" id="img-arrow-3"/>Adittional<br/><br/>
 				<span id="education-3-text">
 					<b>Adobe Creative Cloud</b><br/><br/>After Effects, Photoshop, Illustrator, Premiere Pro.<br/><br/>
 					<b>IDE's</b><br/><br/>Sublime Text 3, Atom, Notepad++.<br/><br/>
@@ -90,5 +91,6 @@
 		</div>
 		</div>
 	</body>
+	<script src="js/dynamics.js" async></script>
 	<script src="js/logic.js" async></script>
 </html>

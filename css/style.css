@@ -7,25 +7,26 @@ body {
 	font-family: Helvetica, "Open Sans", serif;
 	margin: 0 auto;
 	height:100%;
-	background-color:rgb(50,48,49);
-	color:rgb(255, 255, 255);
+	background-color:rgb(248,248,246);
+	color:rgb(49,57,60);
 }
 
 h1 {
 	margin:0;
-  	font-size: 3.5rem;
+  font-size: 3.5rem;
+  color:rgb(49,57,60);
 }
 
 h2 {
 	margin:0;
 	font-size: 3.0rem;
-	color:rgb(255,200,87);
+	color:#FF8303;
 }
 
 h3 {
 	margin:0;
 	font-size: 2.5rem;
-	color:rgba(255,255,255, 0.5);
+	color:#FF8303;
 }
 
 p {
@@ -34,11 +35,11 @@ p {
 
 a {
 	text-decoration:none;
-  color:rgb(255,200,87);
+  color:#FF8303;
 }
 
 b {
-  color:rgb(255,200,87);
+  color:#FF8303;
 }
 
 li {
@@ -51,9 +52,9 @@ li {
   z-index:999;
   top:0;
   width: 100%;
-  background-color:rgba(82, 71, 77, 0.95);
+  background-color:rgba(49,57,60, 0.9);
   height:75px;
-  border-bottom:5px solid rgba(255,200,87,0.8);
+  border-bottom:5px solid #FF8303;
 }
 
   /* parent class of bar flexbox */
@@ -81,25 +82,29 @@ li {
   .hero p {
   	margin-top:300px;
   	font-size:2rem;
-  	color:rgb(255,200,87);
+  	color:rgba(49,57,60, 0.9);
   }
 
   .hero .name {
   	font-size:4rem;
   	font-weight:bolder;
-  	color:rgb(255,255,255);
+  	color:rgba(49,57,60, 0.9);
   }
 
   .hero .sub {
   	font-size:4rem;
-  	color:rgba(255,255,255, 0.5);
+  	color:#FF8303;
   	font-weight:bolder;
   }
 
   .hero .about {
 	font-size:2rem;
-	color:rgba(255,255,255, 0.5);
+	color:rgba(49,57,60, 0.9);
   }
+
+#about-me {
+  margin-top:175px;
+}
 
 .about-me {
 	height: 650px;
@@ -131,7 +136,7 @@ li {
 	}
 
 	  .about-me .img-par .filter {
-	  	background-color: rgb(255,200,87);
+	  	background-color: rgba(49,57,60);
 	  	width:469px;
 	  	height:469px;
 	  	position:absolute;
@@ -144,6 +149,10 @@ li {
       opacity:0;
     }    
 
+#personal-projects {
+  margin-top:100px;
+}
+
 .personal-projects {
 	height: 1500px;
 	width:960px;
@@ -154,12 +163,12 @@ li {
   	height:475.5px;
   	width:951px;
   	margin: 25px auto;
-  	box-shadow: 0px 0px 0px rgb(255,200,87);
+  	box-shadow: 0px 0px 0px #FF8303;
     transition:1s;
   }
 
   .personal-projects img:hover {
-    box-shadow: 0px 0px 25px rgb(255,200,87);
+    box-shadow: 0px 0px 25px #FF8303;
   }
 
 .education {
@@ -193,7 +202,7 @@ li {
       width:960px;
       position:absolute;
       z-index:1;
-      background-color: rgb(255,200,87);
+      background-color: rgba(49,57,60);
       opacity:.5;
       transition:1s;
     }
@@ -205,20 +214,33 @@ li {
 /*buttons for education section*/
 #education-1, #education-2, #education-3 {
   padding:15px;
-  color:rgb(50,48,49);
-  background-color:rgb(255,200,87);
+  color:rgb(248,248,246);
+  background-color:rgb(49,57,60);
   font-weight:bolder;
-  opacity:0.5;
+  opacity:0.7;
   transition:1s;
+  cursor:pointer;
 }
+
+#education-1 img, #education-2 img, #education-3 img {
+  height:16px;
+  width:16px;
+  margin-right:15px;
+}
+
   /*fade in animation*/
   #education-1:hover, #education-2:hover, #education-3:hover {
     opacity:1;
   }
 
   #education-1 #education-1-text, #education-2-text, #education-3-text {
-    background-color:rgb(50,48,49);
+    background-color:rgb(49,57,60);
     color:rgb(255, 255, 255);
     display:none;
     padding:15px;
   }
+
+/*Modification classes*/
+.rotate {
+   transform: rotate(90deg);
+}

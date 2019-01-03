@@ -8,17 +8,21 @@ const isClicked = (display) => {
 };
 
 //Function can be reused to open any tab and close them!
-const openSection = (name) => {
+const openSection = (name, icon) => {
 
 	//Set our current section
 	let clicked = false;
 	let section = document.getElementById(name);
+	let arrow = document.getElementById(icon);
 
 	//Open and close section logic
 	if(!isClicked(section.style.display)) {
 		section.style.display = 'block';
+		arrow.classList.add('rotate');
 	} else {
 		section.style.display = 'none';
+		if(arrow.classList.contains('rotate')) {
+			arrow.classList.remove('rotate');
+		}
 	}
-
 };
