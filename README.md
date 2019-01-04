@@ -1,7 +1,7 @@
 # Personal-Website
 Personal website that I created during my freetime in order to show my portfolio and provide users a nice and responsive experience.
 
-![Output sample](https://github.com/rudypflores/Personal-Website/tree/master/video/sample.gif)
+![](/video/name-of-giphy.gif)
 
 ## Current Features
 
