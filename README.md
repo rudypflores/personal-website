@@ -1,6 +1,14 @@
 # Personal-Website
 Personal website that I created during my freetime in order to show my portfolio and provide users a nice and responsive experience.
 
+## Current Features
+
+- Animations through accessing transition in JS DOM
+- Implementation of JS events
+- HTML resume request form
+- Easy color pallete switch for website interface
+- Image filter layering
+
 ## On going work in progress
 
 Upcoming features for this website in the following weeks will include:
