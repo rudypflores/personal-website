@@ -1,6 +1,8 @@
 # Personal-Website
 Personal website that I created during my freetime in order to show my portfolio and provide users a nice and responsive experience.
 
+![](video/img_transposer.png)
+
 ## Current Features
 
 - Animations through accessing transition in JS DOM
@@ -8,6 +10,7 @@ Personal website that I created during my freetime in order to show my portfolio
 - HTML resume request form
 - Easy color pallete switch for website interface
 - Image filter layering
+- Mobile Comaptibility
 
 ## On going work in progress
 
