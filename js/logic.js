@@ -11,18 +11,19 @@ const isClicked = (display) => {
 const openSection = (name, icon) => {
 
 	//Set our current section
-	let clicked = false;
 	let section = document.getElementById(name);
 	let arrow = document.getElementById(icon);
 
 	//Open and close section logic
 	if(!isClicked(section.style.display)) {
+		//Animation for arrow rotation
 		section.style.display = 'block';
-		arrow.classList.add('rotate');
+		arrow.style.transition = 'transform 0.2s ease-in 0s';
+		arrow.style.transform = 'rotate(90deg)';
 	} else {
+		arrow.style.transition = 'transform 0.2s linear 0s';
+		arrow.style.transform = 'rotate(0deg)';
 		section.style.display = 'none';
-		if(arrow.classList.contains('rotate')) {
-			arrow.classList.remove('rotate');
-		}
+		
 	}
 };

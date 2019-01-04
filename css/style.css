@@ -8,25 +8,25 @@ body {
 	margin: 0 auto;
 	height:100%;
 	background-color:rgb(248,248,246);
-	color:rgb(49,57,60);
+	color:rgba(49,57,60, 0.9);
 }
 
 h1 {
 	margin:0;
   font-size: 3.5rem;
-  color:rgb(49,57,60);
+  color:rgba(49,57,60, 0.9);
 }
 
 h2 {
 	margin:0;
 	font-size: 3.0rem;
-	color:#FF8303;
+	color:rgb(255,131,3);
 }
 
 h3 {
 	margin:0;
 	font-size: 2.5rem;
-	color:#FF8303;
+	color:rgb(255,131,3);
 }
 
 p {
@@ -35,11 +35,11 @@ p {
 
 a {
 	text-decoration:none;
-  color:#FF8303;
+  color:rgb(255,131,3);
 }
 
 b {
-  color:#FF8303;
+  color:rgb(255,131,3);
 }
 
 li {
@@ -54,7 +54,8 @@ li {
   width: 100%;
   background-color:rgba(49,57,60, 0.9);
   height:75px;
-  border-bottom:5px solid #FF8303;
+  border-bottom:5px solid rgba(255,131,3, 0.9);
+  box-shadow: 0px 1px 10px #000000;
 }
 
   /* parent class of bar flexbox */
@@ -93,7 +94,7 @@ li {
 
   .hero .sub {
   	font-size:4rem;
-  	color:#FF8303;
+  	color:rgb(255,131,3);
   	font-weight:bolder;
   }
 
@@ -163,12 +164,12 @@ li {
   	height:475.5px;
   	width:951px;
   	margin: 25px auto;
-  	box-shadow: 0px 0px 0px #FF8303;
+  	box-shadow: 0px 0px 0px rgb(255,131,3);
     transition:1s;
   }
 
   .personal-projects img:hover {
-    box-shadow: 0px 0px 25px #FF8303;
+    box-shadow: 0px 0px 25px rgb(255,131,3);
   }
 
 .education {
@@ -223,8 +224,8 @@ li {
 }
 
 #education-1 img, #education-2 img, #education-3 img {
-  height:16px;
-  width:16px;
+  height:18px;
+  width:18px;
   margin-right:15px;
 }
 
@@ -245,6 +246,43 @@ li {
   width:960px;
   margin: 750px auto;
 }
+
+/*Styling for the form*/
+.form-resume {
+  font-size:2rem;
+  color:rgb(255,131,3);
+  font-weight:700;
+}
+
+  .form-resume input {
+    width:945px;
+    padding:15px;
+    font-size:1.5rem;
+    border:none;
+    background-color:rgba(49,57,60, 0.8);
+    color:rgba(255,255,255,0.9);
+  }
+
+  .form-resume .fullname {
+    height:35px;
+  }
+
+  .form-resume .reason {
+    width:945px;
+    padding:15px;
+    background-color:rgba(49,57,60, 0.8);
+    color:rgba(255,255,255,0.9);
+    font-size:1.5rem;
+    border:none;
+  }
+
+  .form-resume .submit {
+    cursor:pointer;
+    width:275px;
+    margin:0 auto;
+    display:block;
+    height:75px;
+  }
 
 /*Modification classes*/
 .rotate {
