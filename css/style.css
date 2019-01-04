@@ -175,7 +175,10 @@ li {
 .education {
 	height: 500px;
   width:960px;
-  margin: 640px auto;
+  margin-top:640px;
+  margin-right:auto;
+  margin-left:auto;
+  margin-bottom:940px;
 }
 
   .education .par {
@@ -229,11 +232,6 @@ li {
   margin-right:15px;
 }
 
-  /*fade in animation*/
-  #education-1:hover, #education-2:hover, #education-3:hover {
-    opacity:1;
-  }
-
   #education-1 #education-1-text, #education-2-text, #education-3-text {
     background-color:rgb(49,57,60);
     color:rgb(255, 255, 255);
@@ -244,7 +242,10 @@ li {
 .resume {
   height: 500px;
   width:960px;
-  margin: 750px auto;
+  margin-top:1060px;
+  margin-right:auto;
+  margin-left:auto;
+  margin-bottom:555px;
 }
 
 /*Styling for the form*/
