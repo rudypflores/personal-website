@@ -52,8 +52,6 @@ window.onload = () => {
 	//Access the parent class
 	let master = document.getElementById('hero-text').children;
 
-	console.log(master);
-
 	//Store the properties we will modify from the children
 	let greet = master[0].style;
 	let title = master[2].style;
@@ -71,7 +69,7 @@ window.onload = () => {
 	sub.opacity = '1';
 	about.opacity = '1';
 
-	//Slide in top bar
+	//Slide in nav bar animation
 	let bar = document.getElementById('bar').style;
 	let items = document.getElementById('items').style;
 
