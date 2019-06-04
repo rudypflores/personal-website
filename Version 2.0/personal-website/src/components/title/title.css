@@ -1,9 +1,10 @@
 /* Name description */
 .title {
-    margin: 0;
-    padding: 5px 25px;
+    margin:0;
     text-align: center;
-  }
+    padding-right:25px;
+    padding-left:25px;
+}
   
 #prefix {
     font-weight: 300;
@@ -14,11 +15,13 @@
     font-weight: 800;
     font-size: 3rem;
     color: #80d8ff;
+    padding-bottom:25px;
 }
 
 #description {
     font-weight: 500;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    padding-bottom: 65px;
 }
 
 /* Learn more button */
@@ -29,7 +32,6 @@
     border: 2px solid #80d8ff;
     color: #ffffff;
     background-color: rgba(0,0,0,0);
-    margin: 25px;
     cursor: pointer;
     font-family: 'Lato';
 }

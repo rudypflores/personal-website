@@ -1,0 +1,34 @@
+/* Settings for AppDrawer */
+
+#app-drawer {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    background-color: #00b0ff;
+    padding: 0px 0px 0px 25px;
+}
+
+#app-drawer img {
+    width:auto;
+    height:32px;
+    cursor: pointer;
+}
+
+@keyframes rotateLeft {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes rotateRight {
+    from {
+        transform: rotate(90deg);
+    } to {
+        transform: rotate(0deg);
+    }
+}

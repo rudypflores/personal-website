@@ -2,11 +2,12 @@
 
 .App {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
+  align-content: center;
   font-size: calc(10px + 2vmin);
   color: #ffffff;
   font-family: 'Lato', sans-serif;
