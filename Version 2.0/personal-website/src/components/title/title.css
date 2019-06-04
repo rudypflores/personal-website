@@ -1,0 +1,39 @@
+/* Name description */
+.title {
+    margin: 0;
+    padding: 5px 25px;
+    text-align: center;
+  }
+  
+#prefix {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+#name {
+    font-weight: 800;
+    font-size: 3rem;
+    color: #80d8ff;
+}
+
+#description {
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+/* Learn more button */
+#btn-learn {
+    font-weight: 600;
+    padding:1rem 2rem;
+    border-radius:4px;
+    border: 2px solid #80d8ff;
+    color: #ffffff;
+    background-color: rgba(0,0,0,0);
+    margin: 25px;
+    cursor: pointer;
+    font-family: 'Lato';
+}
+
+#btn-learn:active {
+    transform: translateY(-0.1rem);
+}
