@@ -1,6 +1,7 @@
 import React from 'react';
 import './appDrawer.css';
-import Drawer from '../../images/drawer.png';
+import DrawerIcon from '../../images/drawer.png';
+import Drawer from './drawer';
 
 
 class AppDrawer extends React.Component {
@@ -31,18 +32,10 @@ class AppDrawer extends React.Component {
         }
     }
 
-    displayDrawer() {
-        if(this.state.active) {
-            //some component for the app drawer
-            console.log("drawing the app drawer...");
-        }
-    }
-
     render() {
         return (
             <div id="app-drawer">
-                {this.displayDrawer()}
-                <img src={Drawer} alt="App drawer icon" onClick={this.handleClick} id="drawer"/>
+                <img src={DrawerIcon} alt="App drawer icon" onClick={this.handleClick} id="drawer"/>
             </div>
         );
     }
