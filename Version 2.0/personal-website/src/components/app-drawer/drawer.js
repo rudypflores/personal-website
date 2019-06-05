@@ -16,7 +16,7 @@ class Drawer extends React.Component {
             return (
                 <div id="drawer">
                     <ul id="options">
-                        <li onClick={this.handleClick.bind(this, 'home')}>Home</li>
+                        <li onClick={this.handleClick.bind(this, 'home')} className="odd">Home</li>
                         <li onClick={this.handleClick.bind(this, 'projects')}>Projects</li>
                         <li onClick={this.handleClick.bind(this, 'research')}>Research</li>
                         <li onClick={this.handleClick.bind(this, 'education')}>Education</li>

@@ -1,5 +1,5 @@
 #drawer {
-    background-color: #0091ea;
+    background-color: #ffffff;
     display:flex;
     align-content: center;
     align-items: center;
@@ -7,7 +7,7 @@
     flex-flow: column wrap;
     position: absolute;
     z-index:1;
-    height:100vh;
+    height:90vh;
     width:100vw;
     animation: slideIn 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     animation-fill-mode: forwards;
@@ -15,12 +15,12 @@
 }
 
 #options {
-    color:#ffffff;
+    color:#001736;
     list-style-type: none;
     list-style: none;
     display: flex;
     flex-flow: column wrap;
-    justify-content:space-around;
+    justify-content:space-evenly;
     align-content: center;
     align-items: center;
     height:100vh;
@@ -31,6 +31,13 @@
     opacity:0;
     animation: fadeIn 0.6s ease-in-out 0.6s;
     animation-fill-mode: forwards;
+}
+
+.odd {
+    color:#ffffff;
+    background-color:#001736;
+    width:100%;
+    border-radius: 3px;
 }
 
 @keyframes fadeIn {

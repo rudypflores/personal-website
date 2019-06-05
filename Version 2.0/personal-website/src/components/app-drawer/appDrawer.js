@@ -1,6 +1,7 @@
 import React from 'react';
 import './appDrawer.css';
 import DrawerIcon from '../../images/drawer.png';
+import GithubIcon from '../../images/github.jpg';
 
 
 class AppDrawer extends React.Component {
@@ -31,6 +32,9 @@ class AppDrawer extends React.Component {
         return (
             <div id="app-drawer">
                 <img src={DrawerIcon} alt="App drawer icon" onClick={this.handleClick} id="drawer-icon"/>
+                <a href="github.com/rudypflores" target="_blank">
+                    <img src={GithubIcon} alt="Github icon" id="github-icon"/>
+                </a>
             </div>
         );
     }

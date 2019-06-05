@@ -37,7 +37,7 @@ class ViewController extends React.Component {
         return (
             <React.Fragment>
                 <Drawer active={this.props.active} onclick={this.handleClick} onclickParent={this.props.onclick}/>
-                <div className="App">{this.loadView()}</div>
+                <div id="App">{this.loadView()}</div>
             </React.Fragment>
         );
     }

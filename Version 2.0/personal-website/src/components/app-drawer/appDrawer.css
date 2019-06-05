@@ -7,14 +7,20 @@
     align-items: center;
     justify-content: space-between;
     height: 10vh;
-    background-color: #00b0ff;
-    padding-left:25px;
+    background-color: #00BBFA;
+    padding:0px 25px;
+    margin:0;
 }
 
 #app-drawer img {
     width:auto;
-    height:24px;
+    height:3vh;
     cursor: pointer;
+}
+
+#app-drawer #github-icon {
+    width:auto;
+    height:5.5vh;
 }
 
 @keyframes rotateLeft {

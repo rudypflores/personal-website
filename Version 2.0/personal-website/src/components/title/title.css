@@ -26,22 +26,24 @@
 #name {
     font-weight: 800;
     font-size: 3rem;
-    color: #00b0ff;
+    color: #00BBFA;
     padding-bottom:25px;
 }
 
 #description {
     font-weight: 500;
     font-size: 1.5rem;
-    padding-bottom: 65px;
+    padding-bottom: 35px;
+    color:#FFFFFF;
 }
 
 /* Learn more button */
 #btn-learn {
     font-weight: 600;
     padding:1rem 2rem;
+    font-size:1rem;
     border-radius:4px;
-    border: 2px solid #00b0ff;
+    border: 2px solid #00BBFA;
     color: #ffffff;
     background-color: rgba(128, 216, 255, 0);
     cursor: pointer;
@@ -62,14 +64,4 @@
 
 #btn-learn:active {
     transform: translateY(-0.1rem);
-    animation: brighten 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    animation-fill-mode: forwards;
-}
-
-@keyframes brighten {
-    from {
-        background-color:rgba(128, 216, 255, 0);
-    } to {
-        background-color: rgba(128, 216, 255, 1);
-    }
 }
