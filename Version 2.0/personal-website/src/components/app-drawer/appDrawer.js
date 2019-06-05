@@ -1,41 +1,36 @@
 import React from 'react';
 import './appDrawer.css';
 import DrawerIcon from '../../images/drawer.png';
-import Drawer from './drawer';
 
 
 class AppDrawer extends React.Component {
 
+    //initialize state and props
     constructor(props) {
         super(props);
         this.state = {
-            active: false,
-        }
+            clicked:false,
+        };
         this.handleClick = this.handleClick.bind(this);
     }
 
-    //This function will toggle the active state 
+    //This function will toggle the clicked state 
     //& play the rotation animation
     handleClick() {
+        const drawer = document.getElementById('drawer-icon').style;
+
         this.setState({
-            active:!this.state.active,
+            clicked:!this.state.clicked,
         });
 
-        const drawer = document.getElementById('drawer').style;
-
-        if(this.state.active) {
-            drawer.animation = 'rotateRight 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)'; 
-            drawer.animationFillMode = 'forwards';
-        } else {
-            drawer.animation = 'rotateLeft 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
-            drawer.animationFillMode = 'forwards';
-        }
+        this.props.onclick(drawer);
     }
 
+    //render the drawer icon
     render() {
         return (
             <div id="app-drawer">
-                <img src={DrawerIcon} alt="App drawer icon" onClick={this.handleClick} id="drawer"/>
+                <img src={DrawerIcon} alt="App drawer icon" onClick={this.handleClick} id="drawer-icon"/>
             </div>
         );
     }

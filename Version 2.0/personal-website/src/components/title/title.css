@@ -4,7 +4,19 @@
     text-align: center;
     padding-right:25px;
     padding-left:25px;
+    animation: slideDown 1s cubic-bezier(0.075, 0.82, 0.165, 1) both;
+    animation-delay: 0.2s;
 }
+
+@keyframes slideDown {
+    from {
+        opacity:0;
+        transform: translateY(-50vh)
+    } to {
+        opacity:1;
+        transform: translateY(0px);
+    }
+  }
   
 #prefix {
     font-weight: 300;
@@ -14,7 +26,7 @@
 #name {
     font-weight: 800;
     font-size: 3rem;
-    color: #80d8ff;
+    color: #00b0ff;
     padding-bottom:25px;
 }
 
@@ -29,11 +41,23 @@
     font-weight: 600;
     padding:1rem 2rem;
     border-radius:4px;
-    border: 2px solid #80d8ff;
+    border: 2px solid #00b0ff;
     color: #ffffff;
     background-color: rgba(128, 216, 255, 0);
     cursor: pointer;
     font-family: 'Lato';
+    animation: slideUp 1s cubic-bezier(0.075, 0.82, 0.165, 1) both;
+    animation-delay: 0.4s;
+}
+
+@keyframes slideUp {
+    from {
+        opacity:0;
+        transform: translateY(50vh)
+    } to {
+        opacity:1;
+        transform: translateY(0px);
+    }
 }
 
 #btn-learn:active {

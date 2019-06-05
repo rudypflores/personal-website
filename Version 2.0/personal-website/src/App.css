@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap');
 
 .App {
-  background-color: #282c34;
+  background-color: #000a12;
   min-height: 90vh;
   display: flex;
   flex-flow: column wrap;
@@ -11,6 +11,10 @@
   font-size: calc(10px + 2vmin);
   color: #ffffff;
   font-family: 'Lato', sans-serif;
+}
+
+html, body {
+  overflow: hidden;
 }
 
 /* 
