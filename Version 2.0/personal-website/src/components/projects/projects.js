@@ -21,9 +21,9 @@ class Projects extends React.Component {
                     technologies can be.
                 </p>
                 <div className="projects-options">
-                    <button className="btn-projects" onClick={this.handleClick.bind(this,'project-1')}>StackRecette</button>
-                    <button className="btn-projects" onClick={this.handleClick.bind(this,'project-2')}>Material-Pokédex</button>
-                    <button className="btn-projects" onClick={this.handleClick.bind(this,'project-3')}>Project-Prototype</button>
+                    <button className="btn-projects" onClick={this.handleClick.bind(this,'project-1')}>Stack Recette</button>
+                    <button className="btn-projects" onClick={this.handleClick.bind(this,'project-2')}>Material Pokédex</button>
+                    <button className="btn-projects" onClick={this.handleClick.bind(this,'project-3')}>Project Prototype</button>
                     <button className="btn-projects" onClick={this.handleClick.bind(this,'project-4')}>Transposer</button>
                 </div>
             </React.Fragment>

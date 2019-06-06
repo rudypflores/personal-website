@@ -1,0 +1,64 @@
+
+/* Resolve break points */
+@media only screen and (orientation: landscape) {
+    .sr-sample {
+        width:40vw !important;
+        height:auto !important;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .tech {
+        flex-flow:column wrap !important;
+    }
+}
+
+/* Stack Recette Component Settings */
+.sr-sample {
+    margin:5px 0px;
+    width:80vw;
+    height:auto;
+}
+
+.sr-description {
+    font-size: 1.2rem;
+    padding:0px 45px;
+    text-align: center;
+    color:#ffffff;
+    margin-bottom:25px;
+}
+
+.sr-link {
+    text-decoration: none;
+    color:#79D7FD;
+    margin-top:25px;
+    font-size: 1.2rem;
+    border:1.5px solid #79D7FD;
+    padding:0.5rem 1rem;
+    border-radius: 1.5px;
+    margin-bottom: 25px;
+}
+
+.sr-link:active {
+    transform: translateY(-3px);
+}
+
+.tech {
+    text-align: center;
+    font-size:1.2rem;
+    font-weight: bolder;
+    color:#ffffff;
+    margin:0;
+    display: flex;
+    justify-content:space-evenly;
+    align-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width:40vw;
+}
+
+ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}

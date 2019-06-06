@@ -3,6 +3,7 @@ import Drawer from '../app-drawer/drawer';
 import '../../App.css';
 import Title from '../title/title';
 import Projects from '../projects/projects';
+import { StackRecette, MaterialPokedex, ProjectPrototype, Transposer } from '../projects/repository';
 
 
 class ViewController extends React.Component {
@@ -36,23 +37,24 @@ class ViewController extends React.Component {
             case 'projects':
                 return <Projects onclick={this.handleClick}/>;
 
-                //nested pages
+                // Nested pages
                 case 'project-1':
-                    return (<p>Project 1</p>);
+                    return <StackRecette/>;
                 case 'project-2':
-                    return (<p>Project 2</p>);
+                    return <MaterialPokedex/>;
                 case 'project-3':
-                    return (<p>Project 3</p>);
+                    return <ProjectPrototype/>;
                 case 'project-4':
-                    return (<p>Project 4</p>);
+                    return <Transposer/>;
 
+            // If no view is found
             default:
                 console.warn("view not found!");
                 return null;
         }
     }
 
-    //Render the drawer and current view
+    // Render the drawer and current view
     render() {
         return (
             <React.Fragment>
