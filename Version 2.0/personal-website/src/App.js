@@ -4,12 +4,13 @@ import AppDrawer from './components/app-drawer/appDrawer';
 import ViewController from './components/view-controller/viewController';
 
 
+// Animations for drawer icon
 const right = 'rotateRight 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
 const left = 'rotateLeft 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
-let swipe = false;
 
 class App extends React.Component {
 
+  // State for defining when the drawer is active
   constructor(props) {
     super(props);
     this.state = {
@@ -18,26 +19,7 @@ class App extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  //Handle swiping to the right
-  componentDidMount() {
-    let touchstartX = 0;
-    let touchendX = 0;
-
-    const gestureZone = document.getElementById('App');
-
-    gestureZone.addEventListener('touchstart', function(event) {
-        touchstartX = event.changedTouches[0].screenX;
-    }, false);
-
-    gestureZone.addEventListener('touchend', function(event) {
-        touchendX = event.changedTouches[0].screenX;
-        if(touchendX > touchstartX) {
-          alert("This is an upcoming feature and its a work in progress!");
-          //implement state change when swiped to the right
-        }
-    }, false); 
-  }
-
+  // Rotate app drawer
   handleClick(img) {
     this.setState({
       active:!this.state.active,
@@ -46,12 +28,11 @@ class App extends React.Component {
     img.animationFillMode = 'forwards';
   }
 
+  // Render the app drawer & the current view
   render() {
     return (
       <React.Fragment>
-        {/* App Drawer */}
         <AppDrawer onclick={this.handleClick}/>
-        {/* render the current view */}
         <ViewController active={this.state.active} onclick={this.handleClick}/>
       </React.Fragment>
     );

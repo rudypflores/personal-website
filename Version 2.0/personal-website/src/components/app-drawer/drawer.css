@@ -33,6 +33,9 @@
     animation-fill-mode: forwards;
 }
 
+#options li {
+    cursor: pointer;
+}
 .odd {
     color:#ffffff;
     background-color:#001736;
