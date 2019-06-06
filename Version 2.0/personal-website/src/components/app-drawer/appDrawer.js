@@ -15,8 +15,8 @@ class AppDrawer extends React.Component {
         this.handleClick = this.handleClick.bind(this);
     }
 
-    //This function will toggle the clicked state 
-    //& play the rotation animation
+    // This function will toggle the clicked state 
+    // & play the rotation animation
     handleClick() {
         const drawer = document.getElementById('drawer-icon').style;
 
@@ -27,12 +27,12 @@ class AppDrawer extends React.Component {
         this.props.onclick(drawer);
     }
 
-    //render the drawer icon & GitHub logo
+    // Render the drawer icon & GitHub logo
     render() {
         return (
             <div id="app-drawer">
                 <img src={DrawerIcon} alt="App drawer icon" onClick={this.handleClick} id="drawer-icon"/>
-                <a href="https://www.github.com/rudypflores" target="_blank">
+                <a href="https://www.github.com/rudypflores" target="_blank" rel="noopener noreferrer">
                     <img src={GithubIcon} alt="Github icon" id="github-icon"/>
                 </a>
             </div>

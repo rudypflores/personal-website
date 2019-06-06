@@ -4,17 +4,8 @@ import './title.css';
 
 class Title extends React.Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {page:null};
-        this.handleClick = this.handleClick.bind(this);
-    }
-
     handleClick() {
-        this.setState({
-            page:'projects',
-        });
-        this.props.onclick(this.state.page);
+        this.props.onclick('projects');
     }
 
     render() {
@@ -26,7 +17,7 @@ class Title extends React.Component {
                 <p id="description" className="title">I'm a Software Engineer based in Chicago, IL specializing in Computer Networks and Cybersecurity.<br/> I am currently working at Northwestern Settlement as a web developer and IT intern.</p>
 
                 {/* takes the user to the projects view */}
-                <button id="btn-learn" onClick={this.handleClick}>View Projects</button>
+                <button id="btn-learn" onClick={this.handleClick.bind(this)}>View Projects</button>
             </React.Fragment>
         );
     }
