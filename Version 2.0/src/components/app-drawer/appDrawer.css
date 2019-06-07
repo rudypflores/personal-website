@@ -1,0 +1,57 @@
+/* Settings for AppDrawer */
+
+#app-drawer {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    background-color: #00BBFA;
+    padding:0px 25px;
+    margin:0;
+}
+
+#app-drawer img {
+    cursor: pointer;
+}
+
+#app-drawer #wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#app-drawer #drawer-icon {
+    width:auto;
+    height:5vh;
+    padding-right:15px;
+}
+
+#app-drawer #home-icon {
+    width:auto;
+    height: 5vh;
+}
+
+#app-drawer #github-icon {
+    width:auto;
+    height:4.2vh;
+}
+
+@keyframes rotateLeft {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes rotateRight {
+    from {
+        transform: rotate(90deg);
+    } to {
+        transform: rotate(0deg);
+    }
+}
