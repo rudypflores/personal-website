@@ -19,7 +19,7 @@
 #app-drawer #wrapper {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
     align-items: center;
 }
@@ -27,12 +27,12 @@
 #app-drawer #drawer-icon {
     width:auto;
     height:5vh;
-    padding-right:15px;
 }
 
 #app-drawer #home-icon {
     width:auto;
     height: 5vh;
+    padding-left:15px;
 }
 
 #app-drawer #github-icon {

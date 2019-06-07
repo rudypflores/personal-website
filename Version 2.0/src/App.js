@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import AppDrawer from './components/app-drawer/appDrawer';
 import ViewController from './components/view-controller/viewController';
 
 
@@ -32,7 +31,6 @@ class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <AppDrawer onclick={this.handleClick}/>
         <ViewController active={this.state.active} onclick={this.handleClick}/>
       </React.Fragment>
     );

@@ -1,36 +1,81 @@
 import React from 'react';
+
 import './drawer.css';
+import './appDrawer.css';
+
+import DrawerIcon from '../../images/drawer.svg';
+import HomeIcon from '../../images/home.svg';
+import GithubIcon from '../../images/github.svg';
 
 
 class Drawer extends React.Component {
 
-    handleClick(page) {
-        //Access drawer-icon for rotating the icon back in place
-        const img = document.getElementById('drawer-icon').style;
-        this.props.onclick(page);
-        this.props.onclickParent(img);
+    // State for determining if the app drawer has been clicked
+    constructor(props) {
+        super(props);
+        this.state = {
+            clicked:false,
+        };
+        this.handleClickDrawer = this.handleClickDrawer.bind(this);
+        this.handleClickHome = this.handleClickHome.bind(this);
     }
 
+    // This function will toggle the clicked state 
+    // & play the rotation animation
+    handleClickDrawer() {
+        const drawer = document.getElementById('drawer-icon').style;
+
+        this.setState({
+            clicked:!this.state.clicked,
+        });
+
+        this.props.onclickParent(drawer);
+    }
+
+    // Return user to home view when clicked
+    handleClickHome() {
+        // Variable for future home button click animation
+        // const home = document.getElementById('home-icon').style;
+        this.props.onclick('home');
+    }
+
+    // Change view when an option has been selected in the menu
+    handleClickPage(npage) {
+        this.props.onclick(npage);
+        this.handleClickDrawer();
+    }
+
+    // Render the app drawer when the drawer icon has been clicked
     determineRender() {
         if(this.props.active) {
             return (
                 <div id="drawer">
                     <ul id="options">
-                        <li onClick={this.handleClick.bind(this, 'home')} className="odd">Home</li>
-                        <li onClick={this.handleClick.bind(this, 'projects')}>Projects</li>
-                        <li onClick={this.handleClick.bind(this, 'research')}>Research</li>
-                        <li onClick={this.handleClick.bind(this, 'education')}>Education</li>
-                        <li onClick={this.handleClick.bind(this, 'skills')}>Skills</li>
-                        <li onClick={this.handleClick.bind(this, 'resume')}>Resume</li>
+                        <li onClick={this.handleClickPage.bind(this, 'home')} className="odd">Home</li>
+                        <li onClick={this.handleClickPage.bind(this, 'projects')}>Projects</li>
+                        <li onClick={this.handleClickPage.bind(this, 'research')}>Research</li>
+                        <li onClick={this.handleClickPage.bind(this, 'education')}>Education</li>
+                        <li onClick={this.handleClickPage.bind(this, 'skills')}>Skills</li>
+                        <li onClick={this.handleClickPage.bind(this, 'resume')}>Resume</li>
                     </ul>
                 </div>
             );
         }
     }
 
+    // Render the app drawer icon, home icon, and GitHub icon
     render() {
         return (
             <React.Fragment>
+                <div id="app-drawer">
+                    <div id="wrapper">
+                        <img src={DrawerIcon} alt="App drawer icon" onClick={this.handleClickDrawer} id="drawer-icon"/>
+                        <img src={HomeIcon} alt="Return to home icon" id="home-icon" onClick={this.handleClickHome}/>
+                    </div>
+                    <a href="https://www.github.com/rudypflores" target="_blank" rel="noopener noreferrer">
+                        <img src={GithubIcon} alt="Github icon" id="github-icon"/>
+                    </a>
+                </div>
                 {this.determineRender()}
             </React.Fragment>
         );
