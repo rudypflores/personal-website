@@ -6,6 +6,7 @@ import './appDrawer.css';
 import DrawerIcon from '../../images/drawer.svg';
 import HomeIcon from '../../images/home.svg';
 import GithubIcon from '../../images/github.svg';
+import ReturnIcon from '../../images/return.svg';
 
 
 class Drawer extends React.Component {
@@ -63,14 +64,35 @@ class Drawer extends React.Component {
         }
     }
 
+    // Determine whether current view should have a return button or not
+    determineReturn() {
+
+        // Add a return button to the project home screen
+        if(this.props.view === 'projects') {
+            return <img src={ReturnIcon} alt="Return to previous view icon" id="return-icon" onClick={this.handleClickHome}/>;
+        } 
+
+        // Checks for all projects and adds the return button
+        for(let i = 1; i <= 4; i++) {
+            const currView = `project-${i}`;
+            if(this.props.view === currView) {
+                return <img src={ReturnIcon} alt="Return to previous view icon" id="return-icon" onClick={this.handleClickHome}/>;
+            }
+        }
+
+        // prevent returning a return button if not within project scope
+        return null;
+    }
+
     // Render the app drawer icon, home icon, and GitHub icon
     render() {
         return (
             <React.Fragment>
                 <div id="app-drawer">
                     <div id="wrapper">
-                        <img src={DrawerIcon} alt="App drawer icon" onClick={this.handleClickDrawer} id="drawer-icon"/>
+                        {this.determineReturn()}
                         <img src={HomeIcon} alt="Return to home icon" id="home-icon" onClick={this.handleClickHome}/>
+                        <img src={DrawerIcon} alt="App drawer icon" onClick={this.handleClickDrawer} id="drawer-icon"/>
                     </div>
                     <a href="https://www.github.com/rudypflores" target="_blank" rel="noopener noreferrer">
                         <img src={GithubIcon} alt="Github icon" id="github-icon"/>
