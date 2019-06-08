@@ -19,6 +19,7 @@ class Drawer extends React.Component {
         };
         this.handleClickDrawer = this.handleClickDrawer.bind(this);
         this.handleClickHome = this.handleClickHome.bind(this);
+        this.handleClickReturn = this.handleClickReturn.bind(this);
     }
 
     // This function will toggle the clicked state 
@@ -38,6 +39,11 @@ class Drawer extends React.Component {
         // Variable for future home button click animation
         // const home = document.getElementById('home-icon').style;
         this.props.onclick('home');
+    }
+
+    // Return to previous view
+    handleClickReturn() {
+        this.props.onclick('projects');
     }
 
     // Change view when an option has been selected in the menu
@@ -65,21 +71,15 @@ class Drawer extends React.Component {
     }
 
     // Determine whether current view should have a return button or not
+    // Return UI created but functionality yet to be done!
     determineReturn() {
-
-        // Add a return button to the project home screen
-        if(this.props.view === 'projects') {
-            return <img src={ReturnIcon} alt="Return to previous view icon" id="return-icon" onClick={this.handleClickHome}/>;
-        } 
-
         // Checks for all projects and adds the return button
         for(let i = 1; i <= 4; i++) {
             const currView = `project-${i}`;
             if(this.props.view === currView) {
-                return <img src={ReturnIcon} alt="Return to previous view icon" id="return-icon" onClick={this.handleClickHome}/>;
+                return <img src={ReturnIcon} alt="Return to previous view icon" id="return-icon" onClick={this.handleClickReturn}/>;
             }
         }
-
         // prevent returning a return button if not within project scope
         return null;
     }
