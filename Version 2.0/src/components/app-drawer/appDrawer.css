@@ -26,14 +26,14 @@
 
 #app-drawer #drawer-icon {
     width:auto;
-    height:4.8vh;
+    height:2.5vh;
     animation: fadeIn 5s cubic-bezier(0.075, 0.82, 0.165, 1) both;
     animation-fill-mode: forwards;
 }
 
 #app-drawer #home-icon {
     width:auto;
-    height: 4.3vh;
+    height: 4vh;
     padding-right:15px;
     animation: fadeIn 5s cubic-bezier(0.075, 0.82, 0.165, 1) both;
     animation-fill-mode: forwards;
@@ -41,9 +41,9 @@
 
 #app-drawer #return-icon {
     width:auto;
-    height: 5vh;
-    padding-right:10px;
-    animation: fadeIn 5s cubic-bezier(0.075, 0.82, 0.165, 1) both;
+    height: 2.5vh;
+    padding-right:20px;
+    animation: fadeIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) both;
     animation-fill-mode: forwards;
 }
 
