@@ -18,6 +18,7 @@
     margin:5px 0px;
     width:80vw;
     height:auto;
+    border-radius: 2px;
 }
 
 .sr-description {
@@ -30,10 +31,10 @@
 
 .sr-link {
     text-decoration: none;
-    color:#79D7FD;
+    color:#00BBFA;
     margin-top:25px;
     font-size: 1.2rem;
-    border:1.5px solid #79D7FD;
+    border:1.5px solid #00BBFA;
     padding:0.5rem 1rem;
     border-radius: 1.5px;
     margin-bottom: 25px;

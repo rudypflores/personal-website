@@ -49,6 +49,13 @@ class ViewController extends React.Component {
                 case 'project-4':
                     return <Transposer/>;
 
+            // Missing Views:
+            /*
+            *   Research
+            *   Education
+            *   Skills
+            */
+
             // If no view is found
             default:
                 console.warn("view not found!");
