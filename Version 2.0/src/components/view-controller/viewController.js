@@ -6,6 +6,9 @@ import Title from '../title/title';
 import Projects from '../projects/projects';
 import Drawer from '../app-drawer/drawer';
 import { StackRecette, MaterialPokedex, ProjectPrototype, Transposer } from '../projects/repository';
+import Education from '../education/education';
+import Skills from '../skills/skills';
+import Resume from '../resume/resume';
 
 
 class ViewController extends React.Component {
@@ -29,13 +32,13 @@ class ViewController extends React.Component {
     // when new state is changed the switch statement will swap the view
     // into the current page state
     loadView() {
-
-        // print for debug purposes
-        console.log(`rendering ${this.state.page}...`);
-
         switch(this.state.page) {
+            
+            // Home view
             case 'home':
                 return <Title onclick={this.handleClick}/>;
+            
+            // Projects view
             case 'projects':
                 return <Projects onclick={this.handleClick}/>;
 
@@ -49,12 +52,17 @@ class ViewController extends React.Component {
                 case 'project-4':
                     return <Transposer/>;
 
-            // Missing Views:
-            /*
-            *   Research
-            *   Education
-            *   Skills
-            */
+            // Education view
+            case 'education':
+                return <Education/>;
+
+            // Skills view
+            case 'skills':
+                return <Skills onclick={this.handleClick}/>;
+
+            // Resume view
+            case 'resume':
+                return <Resume/>;
 
             // If no view is found
             default:

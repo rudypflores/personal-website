@@ -3,6 +3,7 @@
     margin:25px 0px 35px 0px !important;
     font-weight:bolder;
     color:#00BBFA;
+    animation: slideDown 1s cubic-bezier(0.075, 0.82, 0.165, 1) both;
 }
 
 .projects-description {
@@ -10,6 +11,9 @@
     text-align: center;
     padding: 0rem 2rem;
     color:#ffffff;
+    animation: fadeIn 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 .projects-options {
@@ -20,6 +24,7 @@
     justify-content: space-evenly;
     width:60vw;
     margin:25px 0px;
+    animation: slideUp 1s cubic-bezier(0.075, 0.82, 0.165, 1) both;
 }
 
 .btn-projects {
@@ -30,6 +35,7 @@
     border-radius:4px;
     border: 2px solid #00BBFA;
     color: #00BBFA;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
     background-color: rgba(128, 216, 255, 0);
     cursor: pointer;
     font-family: 'Lato';
@@ -40,5 +46,14 @@
 }
 
 .btn-projects:active {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);
     transform: translateY(-5px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
 }

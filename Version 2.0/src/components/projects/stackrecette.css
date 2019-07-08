@@ -19,6 +19,10 @@
     width:80vw;
     height:auto;
     border-radius: 2px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
+    transform: scale(0, 0);
+    animation: popOut 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+    animation-fill-mode: forwards;
 }
 
 .sr-description {
@@ -27,6 +31,9 @@
     text-align: center;
     color:#ffffff;
     margin-bottom:25px;
+    opacity:0;
+    animation: fadeIn 0.5s ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 .sr-link {
@@ -38,6 +45,11 @@
     padding:0.5rem 1rem;
     border-radius: 1.5px;
     margin-bottom: 25px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
+    transform: translateY(50vh);
+    animation: slideUp 1s cubic-bezier(0.075, 0.82, 0.165, 1) both;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
 }
 
 .sr-link:active {
@@ -56,10 +68,37 @@
     align-items: center;
     flex-flow: row wrap;
     width:40vw;
+    transform: translateX(-50vw);
+    animation: slideLeft 1s cubic-bezier(0.075, 0.82, 0.165, 1) both;
+    animation-fill-mode: forwards;
 }
 
 ul {
     list-style-type: none;
     margin:0;
     padding:0;
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(50vw);
+    } to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-50vw);
+    } to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes popOut {
+    from {
+        transform: scale(0, 0);
+    } to {
+        transform: scale(1, 1);
+    }
 }

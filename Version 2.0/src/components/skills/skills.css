@@ -1,0 +1,27 @@
+.s-title {
+    font-size:2.5rem;
+    margin:25px 0px 35px 0px !important;
+    font-weight:bolder;
+    color:#00BBFA;
+    animation: slideDown 1s cubic-bezier(0.075, 0.82, 0.165, 1) both;
+    animation-fill-mode: forwards;
+}
+
+.s-list {
+    text-align: center;
+    color: #ffffff;
+    background-color: #00BBFA;
+    border-radius: 3px;
+    padding: 25px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
+    animation: popOut 1s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.s-ref {
+    font-weight: bolder;
+    padding-bottom: 7px;
+    border-bottom: 2.5px solid #00BBFA;
+    color: #00BBFA;
+    cursor: pointer;
+    animation: slideUp 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
