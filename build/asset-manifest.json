@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Personal-Website/static/css/main.54957d50.chunk.css",
+    "main.js": "/Personal-Website/static/js/main.59a0b905.chunk.js",
+    "main.js.map": "/Personal-Website/static/js/main.59a0b905.chunk.js.map",
+    "runtime~main.js": "/Personal-Website/static/js/runtime~main.b615a709.js",
+    "runtime~main.js.map": "/Personal-Website/static/js/runtime~main.b615a709.js.map",
+    "static/js/2.d04ab8aa.chunk.js": "/Personal-Website/static/js/2.d04ab8aa.chunk.js",
+    "static/js/2.d04ab8aa.chunk.js.map": "/Personal-Website/static/js/2.d04ab8aa.chunk.js.map",
+    "index.html": "/Personal-Website/index.html",
+    "precache-manifest.6774fe72f6f47df94333327492f11697.js": "/Personal-Website/precache-manifest.6774fe72f6f47df94333327492f11697.js",
+    "service-worker.js": "/Personal-Website/service-worker.js",
+    "static/css/main.54957d50.chunk.css.map": "/Personal-Website/static/css/main.54957d50.chunk.css.map",
+    "static/media/drawer.svg": "/Personal-Website/static/media/drawer.34b7abbd.svg",
+    "static/media/github.svg": "/Personal-Website/static/media/github.b0b10cf3.svg",
+    "static/media/home.svg": "/Personal-Website/static/media/home.ac54b369.svg",
+    "static/media/materialpokedex.png": "/Personal-Website/static/media/materialpokedex.aa0b20cd.png",
+    "static/media/neiulogo.png": "/Personal-Website/static/media/neiulogo.4215728c.png",
+    "static/media/projectprototype.png": "/Personal-Website/static/media/projectprototype.f0b9415f.png",
+    "static/media/return.svg": "/Personal-Website/static/media/return.da189f41.svg",
+    "static/media/stackrecette.jpg": "/Personal-Website/static/media/stackrecette.becc7929.jpg",
+    "static/media/transposer.png": "/Personal-Website/static/media/transposer.7915cdc3.png"
+  }
+}
