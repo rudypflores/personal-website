@@ -10,4 +10,4 @@ A react web application to replace the previous vanilla html/css/js website to m
 - Responsive UI for all platforms!
 
 ## Check the website out here
-https://rudypflores.github.io/Personal-Website/
+https://rudypflores.github.io/personal-website/
