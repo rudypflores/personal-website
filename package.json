@@ -2,7 +2,7 @@
   "name": "personal-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rudypflores.github.io/Personal-Website/",
+  "homepage": "https://rudypflores.github.io/personal-website/",
   "dependencies": {
     "brew": "0.0.8",
     "gh-pages": "^2.0.1",
