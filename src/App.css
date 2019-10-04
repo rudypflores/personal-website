@@ -2,12 +2,12 @@
 
 /* global app settings */
 body, html {
-  background-color: #001736;
+  background-color: #D9241D;
 }
 
 /* app container settings */
 #App {
-  background-color: #001736;
+  background-color: #D9241D;
   min-height:90vh;
   display: flex;
   flex-flow: column wrap;
@@ -15,7 +15,7 @@ body, html {
   justify-content: center;
   align-content: center;
   font-size: calc(10px + 2vmin);
-  color: #79D7FD;
+  color: #FAFAFA;
   font-family: 'Lato', sans-serif;
   overflow: hidden;
 }

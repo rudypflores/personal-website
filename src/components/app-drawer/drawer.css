@@ -1,5 +1,5 @@
 #drawer {
-    background-color: #ffffff;
+    background-color: #401810;
     display:flex;
     align-content: center;
     align-items: center;
@@ -15,7 +15,7 @@
 }
 
 #options {
-    color:#001736;
+    color:#FEFEFE;
     list-style-type: none;
     list-style: none;
     display: flex;
@@ -37,8 +37,8 @@
     cursor: pointer;
 }
 .odd {
-    color:#ffffff;
-    background-color:#001736;
+    color:#401810;
+    background-color:#FEFEFE;
     width:100%;
     border-radius: 3px;
 }
