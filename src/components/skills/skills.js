@@ -20,6 +20,7 @@ class Skills extends React.Component {
                     <li>Adobe Creative Cloud - 4 years</li>
                     <li>Git/Bash/Zsh - 1 year</li>
                     <li>Android Studio - 8 months</li>
+                    <li>Material Design - 8 months</li>
                 </ul>
                 <p onClick={this.handleClick.bind(this)} className="s-ref">find out more on the resume page</p>
             </React.Fragment>
