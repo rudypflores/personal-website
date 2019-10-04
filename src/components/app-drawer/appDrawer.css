@@ -5,9 +5,9 @@
     align-content: center;
     align-items: center;
     justify-content: space-between;
-    height: 10vh;
+    height:10vh;
+    padding: 0px 25px;
     background-color: #0C0C0C;
-    padding:0px 25px;
     margin:0;
 }
 
