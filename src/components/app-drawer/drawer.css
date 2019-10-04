@@ -1,5 +1,5 @@
 #drawer {
-    background-color: #401810;
+    background-color: #0C0C0C;
     display:flex;
     align-content: center;
     align-items: center;
@@ -37,7 +37,7 @@
     cursor: pointer;
 }
 .odd {
-    color:#401810;
+    color:#0C0C0C;
     background-color:#FEFEFE;
     width:100%;
     border-radius: 3px;

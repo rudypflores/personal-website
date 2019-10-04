@@ -1,6 +1,7 @@
 import React from 'react';
 
 import '../../App.css';
+import background from '../../images/background.svg';
 
 import Title from '../title/title';
 import Projects from '../projects/projects';
