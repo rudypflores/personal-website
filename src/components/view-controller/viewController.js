@@ -1,7 +1,6 @@
 import React from 'react';
 
 import '../../App.css';
-import background from '../../images/background.svg';
 
 import Title from '../title/title';
 import Projects from '../projects/projects';
@@ -72,11 +71,19 @@ class ViewController extends React.Component {
         }
     }
 
+    //check for pc or mobile
+    isMobile() {
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            return true;
+        }
+        return false;
+    }
+
     // Render the drawer and current view
     render() {
         return (
             <React.Fragment>
-                <Drawer active={this.props.active} onclick={this.handleClick} onclickParent={this.props.onclick} view={this.state.page}/>
+                <Drawer active={this.props.active} onclick={this.handleClick} onclickParent={this.props.onclick} view={this.state.page} />
                 <div id="App">{this.loadView()}</div>
             </React.Fragment>
         );

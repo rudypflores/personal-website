@@ -1,5 +1,4 @@
 /* Settings for AppDrawer */
-
 #app-drawer {
     display: flex;
     flex-flow: row wrap;
