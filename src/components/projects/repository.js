@@ -6,7 +6,6 @@ import MaterialPokedexIcon from '../../images/materialpokedex.png';
 import ProjectPrototypeIcon from '../../images/projectprototype.png';
 import TranposerIcon from '../../images/transposer.png';
 
-
 export class StackRecette extends React.Component {
 
     render() {

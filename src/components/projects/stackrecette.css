@@ -19,9 +19,9 @@
     width:80vw;
     height:auto;
     border-radius: 2px;
+    opacity:0;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
-    transform: scale(0, 0);
-    animation: popOut 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+    animation: fadeIn 0.5s ease-in-out;
     animation-fill-mode: forwards;
 }
 
@@ -80,25 +80,38 @@ ul {
 }
 
 @keyframes slideRight {
-    from {
+    0% {
         transform: translateX(50vw);
-    } to {
+        opacity:0;
+    } 
+    25% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
         transform: translateX(0px);
     }
 }
 
 @keyframes slideLeft {
-    from {
+    0% {
+        opacity:0;
         transform: translateX(-50vw);
-    } to {
+    } 
+    25% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
         transform: translateX(0px);
     }
 }
 
-@keyframes popOut {
+@keyframes fadeIn {
     from {
-        transform: scale(0, 0);
-    } to {
-        transform: scale(1, 1);
+        opacity:0;
+    }
+    to {
+        opacity:1;
     }
 }

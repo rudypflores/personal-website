@@ -44,7 +44,7 @@ class ViewController extends React.Component {
 
                 // Nested pages
                 case 'project-1':
-                    return <StackRecette/>;
+                    return <StackRecette />;
                 case 'project-2':
                     return <MaterialPokedex/>;
                 case 'project-3':
