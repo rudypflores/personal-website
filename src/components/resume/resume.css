@@ -1,0 +1,20 @@
+.r-title {
+    font-size:2.5rem;
+    margin:25px 0px 35px 0px !important;
+    font-weight:bolder;
+    color:#FAFAFA;
+    animation: slideDown 1s cubic-bezier(0.075, 0.82, 0.165, 1) both;
+    animation-fill-mode: forwards;
+}
+
+.r-desc {
+    text-align: center;
+    padding:1em 2em;
+    animation: slideUp 1s cubic-bezier(0.075, 0.82, 0.165, 1) both;
+    animation-fill-mode: forwards;
+    color: #FAFAFA;
+}
+
+.r-email {
+    color:white;
+}

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap');
+
+/* global app settings */
+/* app container settings */
+#App {
+  min-height:90vh;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #FAFAFA;
+  font-family: 'Lato', sans-serif;
+  overflow: hidden;
+  background-image: url(./images/background.svg);
+  background-color: #DA251E;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {  
+  #App {
+    background: none;
+    background-color:#DA251E;
+  }
+}
+
+/* 
+  ## Color Pallete for project
+
+  foreground: #FAFAFA;
+  background: #DA251E;
+  contrast: #0C0C0C;
+*/

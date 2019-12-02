@@ -1,0 +1,26 @@
+.e-title {
+    font-size:2.5rem;
+    margin:25px 0px 35px 0px !important;
+    font-weight:bolder;
+    color:#FAFAFA;
+    animation: slideDown 1s cubic-bezier(0.075, 0.82, 0.165, 1) both;
+    animation-fill-mode: forwards;
+}
+
+.e-img {
+    width:50vw;
+    max-width: 300px;
+    height:auto;
+    margin:5px 25px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.e-desc {
+    color: #FAFAFA;
+    text-align: center;
+    padding:0px 25px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 0.5s;
+    animation-fill-mode: forwards;
+}
+

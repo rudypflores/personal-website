@@ -1,0 +1,15 @@
+/* Global Settings */
+.projects-title {
+    font-size: 2.3rem;
+    margin-bottom:50px;
+    margin-top:25px;
+}
+
+.projects-subtitle {
+    font-size:1.4rem;
+    font-weight: bolder;
+    color:#FEFEFE;
+    transform: translateX(50vw);
+    animation: slideRight 1s cubic-bezier(0.075, 0.82, 0.165, 1) both;
+    animation-fill-mode: forwards;
+}
