@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap');
+
+html, body {
+    margin:0;
+    padding: 0;
+    font-family: "Lato", serif;
+    font-size: 16px;
+    color:#FFFFFF;
+    background: url(../img/cover.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+#nav {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding-left: 25px;
+    font-size: 1.2em;
+    font-weight: 800;
+    background-color: #035584;
+    height:8vh;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);
+}
+
+#menu {
+    margin-right: 25px;
+    width: 32px;
+    height: auto;
+    cursor: pointer;
+}
+
+#about, #gallery {
+    margin-right:25px;
+    cursor: pointer;
+}
+
+#contact {
+    cursor: pointer;
+}
+
+.title {
+    font-size: 3em;
+    text-align: center;
+}
+
+.subtitle {
+    margin:25px;
+}
+
+.thinner {
+    font-weight: 300;
+}
+
+.description {
+    margin:25px;
+    font-weight: 500;
+}
+
+@media only screen and (orientation : landscape) {
+    .description {
+        max-width: 600px !important;
+    }
+}
+
+.graphic {
+    width:378px;
+    height:auto;
+    margin-top:25px;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);
+}
+
+.wrapper-row {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin:50px 0px;
+}
