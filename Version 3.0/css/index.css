@@ -41,7 +41,7 @@ html, body {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    padding-left: 25px;
+    justify-content: space-evenly;
     font-size: 1.2em;
     font-weight: 800;
     background-color: #035584;
@@ -50,30 +50,35 @@ html, body {
 }
 
 #menu {
-    margin-right: 25px;
     width: 32px;
     height: auto;
     cursor: pointer;
 }
 
-#about, #gallery {
-    margin-right:25px;
-    cursor: pointer;
-}
-
-#contact {
+#home, #about, #gallery, #contact {
     cursor: pointer;
 }
 
 #intro {
     font-size: 1.5em;
     margin:0;
+    animation: slideTop 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
 }
 
 #title {
     font-size: 3em;
     margin:0;
     flex-shrink: 3;
+    animation: slideTop 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+
+@keyframes slideTop {
+    from {
+        transform: translateY(-150px);
+    }
+    to {
+        transform: translateY(0px);
+    }
 }
 
 #profile {
@@ -84,6 +89,21 @@ html, body {
     border-radius: 50%;
     margin:25px;
     box-shadow: 0 3px 4px 0 rgba(0,0,0,0.14), 0 3px 3px -2px rgba(0,0,0,0.12), 0 1px 8px 0 rgba(0,0,0,0.20);
+    animation: pop 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+
+@keyframes pop {
+    0% {
+        opacity: 0;
+        transform: scale(0,0) rotate(180deg);
+    }
+    2% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1,1) rotate(0deg);
+    }
 }
 
 #subtitle {
@@ -93,6 +113,16 @@ html, body {
     margin:15px 25px;
     font-weight: 400;
     width: 85%;
+    animation: fadeIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 #btn-more {
@@ -103,6 +133,7 @@ html, body {
     font-weight: 900;
     border-radius: 3px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);
+    animation: fadeIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
 a {
