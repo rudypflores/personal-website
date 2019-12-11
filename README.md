@@ -1,4 +1,4 @@
-# Personal Website Version 2.0
+# Personal Website Version 3.0
 
 A vanilla HTML/CSS/JS website with stunning material design 2.0 features!
 
