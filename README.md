@@ -1,17 +1,16 @@
 # Personal Website Version 2.0
 
-A react web application to replace the previous vanilla html/css/js website to make it more user friendly and appealing with beautiful UI/UX.
+A vanilla HTML/CSS/JS website with stunning material design 2.0 features!
 
 ![Homepage](Screenshots/index.png)
+![About](Screenshots/about.png)
 ![Projects](Screenshots/projects.png)
-![Sample](Screenshots/sample.png)
-![Navigation](Screenshots/navigation.png)
+![Contact](Screenshots/contact.png)
 
 ## Main Features
 
 - Mobile app styled web application
 - Material Design
-- MVC architecture for easier view management
 - Responsive UI for all platforms!
 
 ## Check the website out here
