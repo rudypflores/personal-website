@@ -26,16 +26,101 @@ html, body {
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);
 }
 
+#filter {
+    position: absolute;
+    z-index: 1;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.7);
+    animation:fadeIn 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+
+#drawer {
+    position: absolute;
+    z-index:2;
+    background-color: #FAFAFA;
+    color:#424242;
+    width:75%;
+    left:0;
+    border-radius: 0px 3px 3px 0px;
+    top:0;
+    bottom: 0;
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,0.14), 0 3px 3px -2px rgba(0,0,0,0.12), 0 1px 8px 0 rgba(0,0,0,0.20);
+    animation: slideIn 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+
+@keyframes slideIn {
+    from {
+        width: 0%;
+    }
+    to {
+        width:75%;
+    }
+}
+
+#drawer-title {
+    margin:15px;
+    font-size: 1.8em;
+    opacity:0;
+    animation:fadeIn 1s ease-in-out 0.29s forwards;
+}
+
+#drawer hr {
+    color: #424242;
+    margin:0px 15px;
+    opacity:0;
+    animation:fadeIn 1s ease-in-out 0.29s forwards;
+}
+
+.drawer-options {
+    font-size:1.4em;
+    margin: 50px 15px;
+    font-weight: 300;
+    opacity:0;
+    animation:fadeIn 1s ease-in-out 0.29s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@media only screen and (orientation:portrait) {
+    #menu {
+        display: initial !important;
+        align-self: flex-start !important;
+        margin-left:25px !important;
+    }
+
+    #home, #about, #gallery, #contact {
+        display: none !important;
+    }
+
+    #nav {
+        justify-content: flex-start !important;
+    }
+}
+
 #menu {
     margin:20px 0px;
     width: 32px;
     height: auto;
     cursor: pointer;
+    display: none;
 }
 
 #home, #about, #gallery, #contact {
     margin:20px 0px;
     cursor: pointer;
+}
+
+#about {
+    color:#A3EFFA;
 }
 
 .title {
