@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700;900&family=Pacifico&display=swap');
+
+html, body {
+    margin:0;
+}
+
+@media (pointer:none), (pointer:coarse) {
+    #hero {
+        height: 93vh !important;
+    }
+}
+
+/* Dark mode!! */
+@media (prefers-color-scheme: dark) {
+    html {
+        background-color: #282828;
+    }
+    #name {
+        color:#FCFCFC !important;
+    }
+    .card {
+        background-color: #476680 !important;
+    }
+    .card:hover {
+        background-color: #BBC3D1 !important;
+    }
+}
+
+#hero {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: auto;
+}
+
+#hero-top {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#hero-top-right {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#hero-top-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#profile-pic {
+    border-radius: 1.5px;
+    max-width: 256px;
+    opacity:0;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
+    animation: 0.5s popIn 1s ease-in-out forwards;
+}
+
+@keyframes popIn {
+    0% {
+        display: initial;
+        transform: scale(1.1,1.1);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1,1.1);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1,1);
+    }
+}
+
+#name {
+    font-family: 'Pacifico', sans-serif;
+    color:#476680;
+    margin: 0;
+    margin-bottom: -10px;
+    font-size: calc(100% + 5vw);
+}
+
+#title {
+    font-family: 'Montserrat';
+    color: #FCFCFC;
+    font-weight: 400;
+    background-color: #476680;
+    padding: 5px 10px;
+    border-radius: 1.5px;
+    margin:0;
+    font-size: calc(100% + 1vw);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
+}
+
+#hero-bottom {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    height: 25vw;
+    width: 25vw;
+    max-width: 256px;
+    max-height: 256px;
+    margin: 0px 25px;
+    font-size: max(4px,2vw);
+    color:#FCFCFC;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
+    cursor:pointer;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 250ms; 
+    animation: 0.8s scaleIn 1s ease-in-out forwards;
+    opacity:0;
+    border-radius: 1.5px;
+}
+
+@keyframes scaleIn {
+    0% {
+        opacity: 0;
+        transform: scale(0,0);
+    }
+    50% {
+        opacity:0;
+        transform: scale(0,0);
+    }
+    100% {
+        opacity:1;
+        transform: scale(1,1);
+    }
+}
+
+.card:hover {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.20);
+    background-color: #476680;
+}
+
+.card:active {
+    box-shadow: none;
+}
+
+.one {
+    background-color: #BBC3D1;
+
+}
+.two {
+    background-color: #9BBADD;
+}
+
+.three {
+    background-color: #7EBDE8;
+}
