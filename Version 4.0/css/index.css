@@ -31,7 +31,7 @@ html, body {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     height: 100vh;
     width: auto;
 }
@@ -64,7 +64,7 @@ html, body {
     max-width: 256px;
     opacity:0;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
-    animation: 0.5s popIn 1s ease-in-out forwards;
+    animation: popIn 1s ease-in-out forwards;
 }
 
 @keyframes popIn {
@@ -106,7 +106,7 @@ html, body {
 #hero-bottom {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -120,7 +120,6 @@ html, body {
     width: 25vw;
     max-width: 256px;
     max-height: 256px;
-    margin: 0px 25px;
     font-size: max(4px,2vw);
     color:#FCFCFC;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
@@ -128,29 +127,13 @@ html, body {
     -ms-user-select: none;
     user-select: none;
     transition: all 250ms; 
-    animation: 0.8s scaleIn 1s ease-in-out forwards;
-    opacity:0;
     border-radius: 1.5px;
-}
-
-@keyframes scaleIn {
-    0% {
-        opacity: 0;
-        transform: scale(0,0);
-    }
-    50% {
-        opacity:0;
-        transform: scale(0,0);
-    }
-    100% {
-        opacity:1;
-        transform: scale(1,1);
-    }
 }
 
 .card:hover {
     box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.20);
     background-color: #476680;
+    transform: translateY(-10px);
 }
 
 .card:active {
@@ -167,4 +150,31 @@ html, body {
 
 .three {
     background-color: #7EBDE8;
+}
+
+#hero-footer {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#hero-footer img {
+    width:10vw;
+    max-width: 64px;
+    height: auto;
+    margin:10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: scaleIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0,0);
+    }
+    to {
+        opacity: 1;
+        transform: translate(1,1);
+    }
 }
