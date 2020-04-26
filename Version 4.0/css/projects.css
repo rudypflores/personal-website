@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700;900&family=Pacifico&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin:0;
+    font-family: 'Montserrat';
+    overflow-x: hidden !important;
+}
+
+body {
+    margin:0px 15px;
+}
+
+a {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+
+@media (pointer:none), (pointer:coarse) {
+    #hero {
+        height: 93vh !important;
+    }
+}
+
+/* Dark mode!! */
+@media (prefers-color-scheme: dark) {
+    html {
+        background-color: #282828;
+        color:#FAFAFA;
+    }
+    #hero h1 {
+        color: #7EBDE8 !important;
+    }
+
+    h2 {
+        color: #7EBDE8 !important;
+    }
+}
+
+#hero {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1080px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+#hero h1 {
+    font-size: 3em;
+    color:#476680;
+}
+
+#hero p {
+    font-size: 2em;
+    text-align: center;
+}
+
+#hero span {
+    font-weight: 200;
+}
+
+h2 {
+    color:#476680;
+}
+
+.sample-img {
+    width: 70vw;
+    max-width: 512px;
+    height: auto;
+    border-radius: 1.5px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
+}
+
+#project-one {
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    max-width: 1080px;
+    margin:0 auto;
+}
+
+#project-two {
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    max-width: 1080px;
+    margin:0 auto;
+}
+
+#project-three {
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    max-width: 1080px;
+    margin:0 auto;
+}

@@ -1,38 +1,36 @@
-let touchstartX = 0;
-let touchstartY = 0;
-let touchendX = 0;
-let touchendY = 0;
+const navLeft = document.getElementById('nav-left');
+const navRight = document.getElementById('nav-right');
 
-const main = document.getElementById('main');
+// List of cards possible to display
+const cards = [
+    document.getElementById('card-one'),
+    document.getElementById('card-two'),
+    document.getElementById('card-three')
+];
 
-main.addEventListener('touchstart', function(event) {
-    touchstartX = event.screenX;
-    touchstartY = event.screenY;
-}, false);
+let currentCard = 0;
 
-main.addEventListener('touchend', function(event) {
-    touchendX = event.screenX;
-    touchendY = event.screenY;
-    handleGesture();
-}, false); 
+// Navigate left
+const goLeft = () => {
+    cards[currentCard].style.display = 'none';
+    currentCard = currentCard-1 < 0 ? cards.length-1 : currentCard-1;
+    cards[currentCard].style.display = 'block';
+};
 
-function handleGesture() {
-    console.log(`startX: ${touchstartX}`);
-    console.log(`startY: ${touchstartY}`);
-    let swiped = 'swiped: ';
-    if (touchendX < touchstartX) {
-        alert(swiped + 'left!');
-    }
-    if (touchendX > touchstartX) {
-        alert(swiped + 'right!');
-    }
-    if (touchendY < touchstartY) {
-        alert(swiped + 'down!');
-    }
-    if (touchendY > touchstartY) {
-        alert(swiped + 'left!');
-    }
-    // if (touchendY == touchstartY) {
-    //     alert('tap!');
-    // }
-}
+// Navigate right
+const goRight = () => {
+    cards[currentCard].style.display = 'none';
+    currentCard = currentCard+1 > cards.length-1 ? 0 : currentCard+1;
+    cards[currentCard].style.display = 'block';
+};
+
+// Click events for navigation buttons
+navLeft.addEventListener('mouseup', () => goLeft());
+navRight.addEventListener('mouseup', () => goRight());
+window.addEventListener('keyup', e => {
+    if(e.keyCode == '37')
+        goLeft();
+    if(e.keyCode == '39')
+        goRight();
+});
+

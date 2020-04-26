@@ -9,13 +9,17 @@ html {
     flex-flow:column nowrap;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     width: auto;
 }
 
+body {
+    margin:0;
+    height: 100vh;
+}
+
 @media (pointer:none), (pointer:coarse) {
-    html {
-        height: 93vh !important;
+    body {
+        height: auto !important;
     }
 }
 
@@ -29,6 +33,50 @@ html {
     .subtitle {
         color: #7EBDE8 !important;
     }
+}
+
+#nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin:25px;
+}
+
+#nav-left {
+    width: 10vw;
+    max-width: 64px;
+    height: auto;
+    cursor: pointer;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
+    border-radius: 1.5px;
+    transition: all 250ms; 
+}
+
+#nav-home {
+    width: 10vw;
+    max-width: 64px;
+    height: auto;
+    cursor: pointer;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
+    border-radius: 1.5px;
+    transition: all 250ms; 
+}
+
+#nav-right {
+    width: 10vw;
+    max-width: 64px;
+    height: auto;
+    cursor: pointer;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
+    border-radius: 1.5px;
+    transition: all 250ms; 
+}
+
+#nav img:hover {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.20);
+    background-color: #476680;
+    transform: translateY(-10px);
 }
 
 #card-one {
@@ -53,6 +101,7 @@ html {
 
 #title {
     text-align: center;
+    margin-bottom:10;
 }
 
 .sample {
