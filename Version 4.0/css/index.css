@@ -5,6 +5,13 @@ html, body {
     margin:0;
 }
 
+a {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+
 @media (pointer:none), (pointer:coarse) {
     #hero {
         height: 93vh !important;

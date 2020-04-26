@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700;900&family=Pacifico&display=swap');
+
+html {
+    font-family: 'Montserrat';
+    color:#0C0C0C;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+}
+
+@media (pointer:none), (pointer:coarse) {
+    html {
+        height: 93vh !important;
+    }
+}
+
+/* Dark mode!! */
+@media (prefers-color-scheme: dark) {
+    html {
+        background-color: #282828 !important;
+        color:#FAFAFA !important;
+    }
+
+    .subtitle {
+        color: #7EBDE8 !important;
+    }
+}
+
+#card-one {
+    width: 90vw;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+#card-two {
+    width: 90vw;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: none;
+}
+
+#card-three {
+    width: 90vw;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: none;
+}
+
+#title {
+    text-align: center;
+}
+
+.sample {
+    display: block;
+    margin: 0 auto;
+    width:70vw;
+    max-width: 512px;
+    height: auto;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
+    border-radius: 1.5px;
+}
+
+.subtitle {
+    color: #476680;
+}
+
+.thinner {
+    font-weight: 400;
+    font-style: italic;
+}
