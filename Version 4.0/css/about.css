@@ -5,21 +5,25 @@ html {
     font-family: 'Montserrat';
     color:#0C0C0C;
     background-color: #FAFAFA;
+}
+
+body {
+    margin:0px;
+    height: 100vh;
     display: flex;
     flex-flow:column nowrap;
     justify-content: center;
     align-items: center;
-    width: auto;
 }
 
-body {
-    margin:0;
-    height: 100vh;
-}
-
+/* Mobile */
 @media (pointer:none), (pointer:coarse) {
     body {
         height: auto !important;
+    }
+
+    .sample {
+        width: 50vw !important;
     }
 }
 
@@ -41,6 +45,9 @@ body {
     justify-content: space-around;
     align-items: center;
     margin:25px;
+    width:50vw;
+    max-width: 512px;
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
 #nav-left {
@@ -79,39 +86,57 @@ body {
     transform: translateY(-10px);
 }
 
-#card-one {
+.card {
     width: 90vw;
     max-width: 1024px;
     margin: 0 auto;
-}
-
-#card-two {
-    width: 90vw;
-    max-width: 1024px;
-    margin: 0 auto;
+    transition: all 250ms;
+    opacity:0;
+    animation: fadeIn 1s ease-in-out forwards;
     display: none;
 }
 
-#card-three {
-    width: 90vw;
-    max-width: 1024px;
-    margin: 0 auto;
-    display: none;
+@keyframes fadeIn {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }
 
 #title {
     text-align: center;
-    margin-bottom:10;
+    margin:25px;
 }
 
 .sample {
     display: block;
     margin: 0 auto;
     width:70vw;
-    max-width: 512px;
+    max-width: 456px;
     height: auto;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
     border-radius: 1.5px;
+    transition: all 250ms;
+    opacity:0;
+    animation: popIn 0.4s ease-in-out forwards;
+}
+
+@keyframes popIn {
+    0% {
+        display: initial;
+        transform: scale(1.1,1.1);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1,1.1);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1,1);
+    }
 }
 
 .subtitle {

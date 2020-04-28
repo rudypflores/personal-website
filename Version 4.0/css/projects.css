@@ -9,6 +9,8 @@ html, body {
     margin:0;
     font-family: 'Montserrat';
     overflow-x: hidden !important;
+    color:#0C0C0C;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -16,24 +18,28 @@ body {
 }
 
 a {
-    text-decoration: none;
-}
-a:visited {
-    text-decoration: none;
+    all:unset;
+    color:#476680;
+    cursor: pointer;
 }
 
 @media (pointer:none), (pointer:coarse) {
     #hero {
         height: 93vh !important;
     }
+
+    .projects {
+        height: 93vh !important;
+    }
 }
 
 /* Dark mode!! */
 @media (prefers-color-scheme: dark) {
-    html {
+    html, body {
         background-color: #282828;
-        color:#FAFAFA;
+        color:#FAFAFA !important;
     }
+
     #hero h1 {
         color: #7EBDE8 !important;
     }
@@ -41,6 +47,38 @@ a:visited {
     h2 {
         color: #7EBDE8 !important;
     }
+
+    a {
+        color: #7EBDE8 !important; 
+    }
+    
+    #nav-home {
+        background-color: #282828 !important;
+    }
+}
+
+#nav-home {
+    position: fixed;
+    z-index: 1;
+    width: 20vw;
+    max-width: 64px;
+    height: auto;
+    padding:15px;
+    margin:25px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
+    background-color: white;
+    left: 50%;
+    bottom: 5px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 250ms;
+}
+
+#nav-home:hover {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.20);
+    background-color: #476680;
+    bottom:10px;
 }
 
 #hero {
@@ -80,29 +118,7 @@ h2 {
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
 }
 
-#project-one {
-    height: 100vh;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    text-align:center;
-    max-width: 1080px;
-    margin:0 auto;
-}
-
-#project-two {
-    height: 100vh;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    text-align:center;
-    max-width: 1080px;
-    margin:0 auto;
-}
-
-#project-three {
+.projects {
     height: 100vh;
     display: flex;
     flex-flow: column nowrap;

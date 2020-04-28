@@ -9,6 +9,7 @@ const cards = [
 ];
 
 let currentCard = 0;
+cards[currentCard].style.display = 'block';
 
 // Navigate left
 const goLeft = () => {
