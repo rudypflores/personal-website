@@ -9,11 +9,11 @@ A vanilla HTML/CSS/JS website with stunning material design 2.0 features, respon
 - Responsive UI for all platforms!
 - A dark mode that will not burn your eyes 😉
 
-## Light mode
+## Light mode 🔆
 ![IndexWhite](Screenshots/index-white.png)
 ![AboutWhite](Screenshots/about-white.png)
 
-## Dark mode
+## Dark mode 🌙
 ![IndexBlack](Screenshots/index-black.png)
 ![AboutBlack](Screenshots/about-black.png)
 
