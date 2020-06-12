@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700;900&family=Pacifico&display=swap');
+
+html, body {
+    margin:0;
+    font-family: 'Montserrat';
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+@media (pointer:none), (pointer:coarse) {
+    #hero {
+        height: 93vh !important;
+    }
+}
+
+/* Dark mode!! */
+@media (prefers-color-scheme: dark) {
+    html {
+        background-color: #282828;
+        color: #FAFAFA;
+    }
+
+    #main h2 {
+        color: #FAFAFA !important;
+    }
+}
+
+#nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
+    border-bottom: 5px solid #7EBDE8;
+    padding:25px;
+}
+
+#nav img {
+    width: 4vw;
+    min-width: 32px;
+    height: auto;
+    margin-top:5px;
+    margin-right:25px;
+}
+
+#nav h1 {
+    margin:0;
+    color:#7EBDE8;
+}
+
+#main {
+    padding:25px;
+}
+
+#main h2 {
+    color: #282828;
+}
+
+#main p {
+    font-weight: 500;
+}

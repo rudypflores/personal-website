@@ -5,7 +5,8 @@ const navRight = document.getElementById('nav-right');
 const cards = [
     document.getElementById('card-one'),
     document.getElementById('card-two'),
-    document.getElementById('card-three')
+    document.getElementById('card-three'),
+    document.getElementById('card-four')
 ];
 
 let currentCard = 0;
@@ -34,4 +35,3 @@ window.addEventListener('keyup', e => {
     if(e.keyCode == '39')
         goRight();
 });
-
