@@ -18,4 +18,4 @@ A vanilla HTML/CSS/JS website with stunning material design 2.0 features, respon
 ![AboutBlack](Screenshots/about-black.png)
 
 ## Check the website out here
-https://rudyflores.dev
+https://rudypflores.github.io/personal-website/
